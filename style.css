@@ -1,0 +1,27 @@
+body {
+  background: #f7f7fb;
+  text-align: center;
+  font-family: system-ui, sans-serif;
+  padding-top: 40px;
+}
+
+/* Robot container */
+.robot {
+  position: relative;
+  width: 256px;   /* 64 × 4 */
+  height: 256px;
+  margin: auto;
+}
+
+/* All layers stacked */
+.robot img {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
