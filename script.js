@@ -38,16 +38,14 @@ setInterval(earTwitch, 9000);
 screen.addEventListener("click", () => {
   isReacting = true;
 
-  // Show angry face and start bounce
+  // Show angry face instead of idle down
   screen.src = "images/Angry.png";
-  screen.classList.add("Angry");
 
   setTimeout(() => {
-    // Stop bounce and return to idle
-    screen.classList.remove("Angry");
+    // Return to normal idle face
     screen.src = "images/Idle 1 up.png";
     isReacting = false;
-  }, 2000); // 2 seconds
+  }, 600);
 });
 
 // Mouse scroll reaction
@@ -62,6 +60,7 @@ window.addEventListener("wheel", () => {
     isReacting = false;
   }, 1200); // show happy face for ~1.2s
 });
+
 
 
 
