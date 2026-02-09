@@ -1,51 +1,52 @@
 const screen = document.getElementById("screen");
-const antenna = document.getElementById("antenna");
+const ears = document.getElementById("ears");
 
+let eyeUp = true;
 let isReacting = false;
 
-/* ---------- SCREEN BLINK ---------- */
+/* ---------- IDLE EYE MOVEMENT ---------- */
 
-function blink() {
+function idleEyes() {
   if (isReacting) return;
 
-  screen.src = "images/screen_blink.png";
+  screen.src = eyeUp
+    ? "images/Idle 2 down.png"
+    : "images/Idle 1 up.png";
 
-  setTimeout(() => {
-    screen.src = "images/screen_open.png";
-  }, 180); // blink speed
+  eyeUp = !eyeUp;
 }
 
-setInterval(blink, 1800); // blink every ~2s
+setInterval(idleEyes, 1200); // gentle bob
 
-/* ---------- ANTENNA TWITCH ---------- */
+/* ---------- EAR TWITCH ---------- */
 
-function antennaTwitch() {
+function earTwitch() {
   if (isReacting) return;
 
   const direction = Math.random() > 0.5
-    ? "images/antenna_left.png"
-    : "images/antenna_right.png";
+    ? "images/Ear left.png"
+    : "images/Ear right.png";
 
-  antenna.src = direction;
+  ears.src = direction;
 
   setTimeout(() => {
-    antenna.src = "images/antenna_idle.png";
-  }, 250);
+    ears.src = "images/Idle ears.png";
+  }, 260);
 }
 
-setInterval(antennaTwitch, 14000); // every 14s
+setInterval(earTwitch, 9000);
 
 /* ---------- CLICK REACTION ---------- */
 
 screen.addEventListener("click", () => {
   isReacting = true;
 
-  screen.src = "images/screen_blink.png";
-  antenna.src = "images/antenna_right.png";
+  screen.src = "images/Idle 2 down.png";
+  ears.src = "images/Ear right.png";
 
   setTimeout(() => {
-    antenna.src = "images/antenna_idle.png";
-    screen.src = "images/screen_open.png";
+    ears.src = "images/Idle ears.png";
+    screen.src = "images/Idle 1 up.png";
     isReacting = false;
   }, 600);
 });
