@@ -23,14 +23,11 @@ setInterval(idleEyes, 1200); // gentle bob
 function earTwitch() {
   if (isReacting) return;
 
-  const direction = Math.random() > 0.5
-    ? "images/Ear left.png"
-    : "images/Ear right.png";
-
-  ears.src = direction;
+  const angle = Math.random() > 0.5 ? 8 : -8; // small tilt
+  ears.style.transform = `rotate(${angle}deg)`;
 
   setTimeout(() => {
-    ears.src = "images/Idle ears.png";
+    ears.style.transform = "rotate(0deg)";
   }, 260);
 }
 
@@ -50,3 +47,4 @@ screen.addEventListener("click", () => {
     isReacting = false;
   }, 600);
 });
+
