@@ -18,3 +18,8 @@ body {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
 }
+
+
+#ears {
+  transition: transform 0.25s ease;
+}
