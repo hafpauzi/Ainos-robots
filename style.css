@@ -1,5 +1,5 @@
 body {
-  background: #0f1117;
+  background: #54a1b6;
 }
 
 .robot {
@@ -23,6 +23,7 @@ body {
 #ears {
   transition: transform 0.25s ease;
 }
+
 
 
 
