@@ -1,27 +1,20 @@
 body {
-  background: #f7f7fb;
-  text-align: center;
-  font-family: system-ui, sans-serif;
-  padding-top: 40px;
+  background: #0f1117;
 }
 
-/* Robot container */
 .robot {
   position: relative;
-  width: 256px;   /* 64 × 4 */
+  width: 256px;
   height: 256px;
-  margin: auto;
+  margin: 100px auto;
 }
 
-/* All layers stacked */
 .robot img {
   position: absolute;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
-
   image-rendering: pixelated;
   image-rendering: crisp-edges;
 }
