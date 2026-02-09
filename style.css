@@ -23,3 +23,17 @@ body {
 #ears {
   transition: transform 0.25s ease;
 }
+
+
+@keyframes angryBounce {
+  0%   { transform: translateY(0); }
+  25%  { transform: translateY(-6px); }
+  50%  { transform: translateY(0); }
+  75%  { transform: translateY(6px); }
+  100% { transform: translateY(0); }
+}
+
+#screen.angry {
+  animation: angryBounce 0.4s ease-in-out infinite;
+}
+
