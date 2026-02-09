@@ -40,11 +40,11 @@ screen.addEventListener("click", () => {
 
   // Show angry face and start bounce
   screen.src = "images/angry.png";
-  screen.classList.add("angry");
+  screen.classList.add("Angry");
 
   setTimeout(() => {
     // Stop bounce and return to idle
-    screen.classList.remove("angry");
+    screen.classList.remove("Angry");
     screen.src = "images/Idle 1 up.png";
     isReacting = false;
   }, 2000); // 2 seconds
@@ -62,5 +62,6 @@ window.addEventListener("wheel", () => {
     isReacting = false;
   }, 1200); // show happy face for ~1.2s
 });
+
 
 
