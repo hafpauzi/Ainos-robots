@@ -38,14 +38,16 @@ setInterval(earTwitch, 9000);
 screen.addEventListener("click", () => {
   isReacting = true;
 
-  // Show angry face instead of idle down
-  screen.src = "images/Angry.png";
+  // Show angry face and start bounce
+  screen.src = "images/angry.png";
+  screen.classList.add("angry");
 
   setTimeout(() => {
-    // Return to normal idle face
+    // Stop bounce and return to idle
+    screen.classList.remove("angry");
     screen.src = "images/Idle 1 up.png";
     isReacting = false;
-  }, 600);
+  }, 2000); // 2 seconds
 });
 
 
