@@ -55,11 +55,12 @@ window.addEventListener("wheel", () => {
   if (isReacting) return; // prevent overlap with angry click
 
   isReacting = true;
-  screen.src = "images/happy.png";
+  screen.src = "images/Happy.png";
 
   setTimeout(() => {
     screen.src = "images/Idle 1 up.png"; // back to idle face
     isReacting = false;
   }, 1200); // show happy face for ~1.2s
 });
+
 
