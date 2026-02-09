@@ -39,7 +39,7 @@ screen.addEventListener("click", () => {
   isReacting = true;
 
   // Show angry face instead of idle down
-  screen.src = "images/angry.png";
+  screen.src = "images/Angry.png";
 
   setTimeout(() => {
     // Return to normal idle face
@@ -47,4 +47,5 @@ screen.addEventListener("click", () => {
     isReacting = false;
   }, 600);
 });
+
 
