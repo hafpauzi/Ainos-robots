@@ -11,7 +11,7 @@ body {
   position: relative;
   width: 256px;
   height: 256px;
-  margin: 50px auto;
+  margin: 40px auto;
 }
 
 .robot img {
@@ -28,6 +28,7 @@ body {
 #ears {
   transition: transform 0.25s ease;
 }
+
 
 
 
