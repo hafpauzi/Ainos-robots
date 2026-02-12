@@ -4,11 +4,6 @@
 }
 
 body {
-  font-family: 'LowresPixel-Regular', cursive;
-}
-
-
-body {
   background: #54a1b6;
 }
 
@@ -33,6 +28,7 @@ body {
 #ears {
   transition: transform 0.25s ease;
 }
+
 
 
 
