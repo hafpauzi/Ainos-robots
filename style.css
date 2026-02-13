@@ -32,9 +32,10 @@ body {
 .bubble {
   display: block;
   position: center 
-  width: 100px;          /* adjust size as needed */
+  width: 90px;          /* adjust size as needed */
   height: auto;          /* keeps aspect ratio */
 }
+
 
 
 
