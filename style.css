@@ -18,14 +18,14 @@ body {
 }
 
 .robot {
-  position: relative;
+  position: center;
   width: 256px;
   height: 256px;
   margin: 30px auto;
 }
 
 .robot img {
-  position: absolute;
+  position: center;
   top: 0;
   left: 0;
   width: 100%;
@@ -39,11 +39,15 @@ body {
 }
 
 .bubble {
-  display: block;          /* makes it a block element */
-  margin: 20px auto 0;     /* auto left/right centers it */
-  width: 120px;            /* control size */
-  height: auto;            /* keep aspect ratio */
+  
+  width: 60%;
+  position: center
+  max-width: 240px;
+  margin: 20px auto 0;
+  display: block;
 }
+
+
 
 
 
