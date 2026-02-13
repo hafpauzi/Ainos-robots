@@ -29,6 +29,12 @@ body {
   transition: transform 0.25s ease;
 }
 
+.bubble {
+  display: block;
+  margin: 20px auto 0;   /* centers horizontally, adds space above */
+  width: 180px;          /* adjust size as needed */
+  height: auto;          /* keeps aspect ratio */
+}
 
 
 
