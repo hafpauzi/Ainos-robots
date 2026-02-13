@@ -30,11 +30,12 @@ body {
 }
 
 .bubble {
-  display: block;
-  position: center 
-  width: 90px;          /* adjust size as needed */
-  height: auto;          /* keeps aspect ratio */
+  display: block;          /* makes it a block element */
+  margin: 20px auto 0;     /* auto left/right centers it */
+  width: 120px;            /* control size */
+  height: auto;            /* keep aspect ratio */
 }
+
 
 
 
