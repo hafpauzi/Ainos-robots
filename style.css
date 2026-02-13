@@ -31,10 +31,12 @@ body {
 
 .bubble {
   display: block;
+  position: center
   margin: 20px auto 0;   /* centers horizontally, adds space above */
-  width: 180px;          /* adjust size as needed */
+  width: 80px;          /* adjust size as needed */
   height: auto;          /* keeps aspect ratio */
 }
+
 
 
 
