@@ -7,16 +7,21 @@ body {
   background: #54a1b6;
 }
 
-.robot-container {
-  text-align: center;   /* centers everything inside */
-  margin-top: 40px;     /* spacing from top of page */
+
+@font-face {
+  font-family: 'LowresPixel-Regular';
+  src: url('LowresPixel-Regular.otf') format('truetype');
+}
+
+body {
+  background: #54a1b6;
 }
 
 .robot {
-  display: inline-block; /* keeps robot centered */
   position: relative;
   width: 256px;
   height: 256px;
+  margin: 30px auto;
 }
 
 .robot img {
@@ -29,12 +34,32 @@ body {
   image-rendering: crisp-edges;
 }
 
-.bubble {
-  display: inline-block; /* aligns with robot */
-  margin-top: 20px;      /* spacing below robot */
-  width: 120px;          /* adjust size */
-  height: auto;
+#ears {
+  transition: transform 0.25s ease;
 }
+
+.bubble {
+  display: block;          /* makes it a block element */
+  margin: 20px auto 0;     /* auto left/right centers it */
+  width: 120px;            /* control size */
+  height: auto;            /* keep aspect ratio */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
