@@ -4,7 +4,7 @@
 }
 
 .page-title {
-  font-size: 48px;   /* makes the heading big */
+  font-size: 50px;   /* makes the heading big */
   color: #c1c2d9;    /* white text */
   text-align: center;
   margin-top: 10px;
@@ -50,6 +50,7 @@ body {
   margin: 10px auto 0;
   display: block;
 }
+
 
 
 
