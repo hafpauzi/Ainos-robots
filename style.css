@@ -3,6 +3,14 @@
   src: url('LowresPixel-Regular.otf') format('truetype');
 }
 
+.page-title {
+  font-size: 48px;   /* makes the heading big */
+  color: #ffffff;    /* white text */
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'LowresPixel-Regular', sans-serif;
+}
+
 body {
   background: #54a1b6;
 }
@@ -46,6 +54,7 @@ body {
   margin: 20px auto 0;
   display: block;
 }
+
 
 
 
