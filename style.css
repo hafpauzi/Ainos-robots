@@ -7,7 +7,7 @@
   font-size: 48px;   /* makes the heading big */
   color: #ffffff;    /* white text */
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   font-family: 'LowresPixel-Regular', sans-serif;
 }
 
@@ -54,6 +54,7 @@ body {
   margin: 20px auto 0;
   display: block;
 }
+
 
 
 
