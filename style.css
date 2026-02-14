@@ -11,10 +11,6 @@
   font-family: 'LowresPixel-Regular', sans-serif;
 }
 
-body {
-  background: #000000;
-}
-
 
 @font-face {
   font-family: 'LowresPixel-Regular';
@@ -22,7 +18,7 @@ body {
 }
 
 body {
-  background: #54a1b6;
+  background: #000000;
 }
 
 .robot {
@@ -54,6 +50,7 @@ body {
   margin: 10px auto 0;
   display: block;
 }
+
 
 
 
