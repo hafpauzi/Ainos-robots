@@ -10,7 +10,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  gap: 30px;
+  height: 100vh;
 }
 
 .page-title {
@@ -64,9 +65,10 @@ body {
 .bubble {
   width: 80%;
   max-width: 210px;
-  margin-top: 15px;
+  margin: 30px auto 0;
   display: block;
 }
+
 
 
 
