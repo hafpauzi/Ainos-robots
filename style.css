@@ -30,10 +30,10 @@ body {
 }
 
 .robot {
-  position: relative;
-  width: 256px;
-  height: 256px;
-  margin: 40px; auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  /* ← Perfect centering */
 }
 
 .robot img {
@@ -58,6 +58,7 @@ body {
   margin: 10px; auto 0;
   display: block;
 }
+
 
 
 
