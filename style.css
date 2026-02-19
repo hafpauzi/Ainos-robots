@@ -64,9 +64,10 @@ body {
 .bubble {
   width: 100%;
   max-width: 300px;
-  margin: 120px auto 0;
+  margin: 5px auto 0;
   display: block;
 }
+
 
 
 
