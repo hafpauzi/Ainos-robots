@@ -3,32 +3,30 @@
   src: url('LowresPixel-Regular.otf') format('truetype');
 }
 
+body {
+  background: #000000;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+
 .page-title {
-  font-size: 50px;   /* makes the heading big */
-  color: #c1c2d9;    /* white text */
+  font-size: 50px;
+  color: #c1c2d9;
   text-align: center;
-  margin-top: 10px;
+  margin-bottom: 20px;
   font-family: 'LowresPixel-Regular', sans-serif;
 }
 
-
-body {
-  background: #000000;
-}
-
-/* New Way (Perfect) */
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;      /* ← Centers horizontally */
-  justify-content: center;
-}
-
 .robot {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);  /* ← Perfect centering */
+  position: relative;   /* IMPORTANT: not absolute */
+  width: 256px;
+  height: 256px;
 }
 
 .robot img {
@@ -41,68 +39,9 @@ body {
   image-rendering: crisp-edges;
 }
 
-#ears {
-  transition: transform 0.25s ease;
-}
-
 .bubble {
-  
   width: 60%;
-  position: center
-  max-width: 210PX;
-  margin: 10px; auto 0;
+  max-width: 210px;
+  margin-top: 15px;
   display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
