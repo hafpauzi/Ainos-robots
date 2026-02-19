@@ -62,11 +62,12 @@ body {
 }
 
 .bubble {
-  width: 100%;
+  width: 50%;
   max-width: 300px;
   margin-top: 5px auto 0;
   display: block;
 }
+
 
 
 
