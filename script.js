@@ -62,6 +62,72 @@ window.addEventListener("wheel", () => {
 });
 
 
+let totalTime = 30 * 60;
+let timer;
+let running = false;
 
+function updateDisplay() {
+  const minutes = Math.floor(totalTime / 60);
+  const seconds = totalTime % 60;
+
+  document.getElementById("timer-display").textContent =
+    `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+}
+
+function startTimer() {
+  if (running) return;
+
+  running = true;
+
+  timer = setInterval(() => {
+    if (totalTime > 0) {
+      totalTime--;
+      updateDisplay();
+    } else {
+      clearInterval(timer);
+      running = false;
+
+      alert("🎉 Study session completed!");
+    }
+  }, 1000);
+}
+
+function pauseTimer() {
+  clearInterval(timer);
+  running = false;
+}
+
+function resetTimer() {
+  clearInterval(timer);
+  running = false;
+  totalTime = 30 * 60;
+  updateDisplay();
+}
+
+updateDisplay();
+
+function startTimer() {
+  if (running) return;
+
+  document.getElementById("screen").src =
+    "images/Happy Working.png";
+
+  running = true;
+
+  timer = setInterval(() => {
+    if (totalTime > 0) {
+      totalTime--;
+      updateDisplay();
+    } else {
+      clearInterval(timer);
+      running = false;
+
+      document.getElementById("screen").src =
+        "images/Happy.png";
+
+      alert("🎉 Great job! 30 minutes completed!");
+    }
+  }, 1000);
+}
 
 
