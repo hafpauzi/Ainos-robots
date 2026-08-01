@@ -69,22 +69,24 @@ body {
 }
 
 #study-timer{
-  margin-top: -80px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+  margin-top:-30px;
 }
 
 #timer-display{
-  font-size: 48px;
-  color: #333;
-  margin-bottom: 10px;
+  font-size:42px;
+  margin:0;
+  min-width:100px;
 }
 
-button {
-  font-family: 'LowresPixel-Regular';
-  padding: 8px 15px;
-  margin: 5px;
-  cursor: pointer;
+#study-timer button{
+  font-family:'LowresPixel-Regular';
+  width:40px;
+  height:40px;
 }
-
 
 
 
