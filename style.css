@@ -68,14 +68,14 @@ body {
   display: block;
 }
 
-#study-timer {
-  margin-top: 30px;
+#study-timer{
+  margin-top: -80px;
 }
 
-#timer-display {
-  font-size: 50px;
-  margin: 10px 0;
+#timer-display{
+  font-size: 48px;
   color: #333;
+  margin-bottom: 10px;
 }
 
 button {
