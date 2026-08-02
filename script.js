@@ -91,8 +91,9 @@ function resetTimer() {
 updateDisplay();
 
 function startTimer() {
-  if (running) return;
+  console.log("START CLICKED");
 
+  if (running) return;
   running = true;
 
   timer = setInterval(() => {
