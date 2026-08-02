@@ -93,9 +93,6 @@ updateDisplay();
 function startTimer() {
   if (running) return;
 
-  document.getElementById("screen").src =
-    "images/Happy Working.png";
-
   running = true;
 
   timer = setInterval(() => {
