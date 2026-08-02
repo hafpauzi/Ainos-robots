@@ -1,3 +1,4 @@
+const timerSound = new Audio("ding.mp3");
 const screen = document.getElementById("screen");
 const ears = document.getElementById("ears");
 
@@ -125,7 +126,9 @@ function startTimer() {
       document.getElementById("screen").src =
         "images/Happy.png";
 
-      alert("🎉 Great job! 30 minutes completed!");
+      timerSound.play();
+        alert("🎉 Study session completed!");
+        document.getElementById("screen").src"images/Happy.png";
     }
   }, 1000);
 }
