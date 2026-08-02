@@ -75,23 +75,6 @@ function updateDisplay() {
     `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
 }
 
-function startTimer() {
-  if (running) return;
-
-  running = true;
-
-  timer = setInterval(() => {
-    if (totalTime > 0) {
-      totalTime--;
-      updateDisplay();
-    } else {
-      clearInterval(timer);
-      running = false;
-
-      alert("🎉 Study session completed!");
-    }
-  }, 1000);
-}
 
 function pauseTimer() {
   clearInterval(timer);
@@ -128,7 +111,7 @@ function startTimer() {
 
       timerSound.play();
         alert("🎉 Study session completed!");
-        document.getElementById("screen").src"images/Happy.png";
+        document.getElementById("screen").src = "images/Happy.png";
     }
   }, 1000);
 }
